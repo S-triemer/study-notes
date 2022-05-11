@@ -26,7 +26,7 @@ Every Object can look up its prototype chain and inherit properties from the pro
 ```js
 class MakeCar {
   constructor(carMake, carModel, carColor) {
-    (this.make = carMake), this, (model = carModel), (this.carColor = carColor);
+    this.make = carMake, this.model = carModel, this.carColor = carColor,
   }
   lock() {
     alert("locked the doors");
